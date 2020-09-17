@@ -1,5 +1,7 @@
-.header
+// Header - navigation bar
+.navbar
   background-color: #fff
+  // Top of the header
   &-top 
     display: flex
     align-items: center
@@ -9,7 +11,30 @@
   &__search
     margin: auto
     margin-left: 108px
-
+  // Bottom of the header
+  &-menu
+    padding: 31px 0
+    background-color: $dark
+    &__list
+      display: flex
+      margin: 0
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      list-style-type: none
+      color: $light
+    &__link
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      text-transform: uppercase
+      text-decoration: none
+      cursor: pointer
+      color: inherit
+// Logo in the header
+.logo
+  max-width: 177px
+// Search form in the header
 .search
   display: flex
   position: relative
@@ -32,8 +57,9 @@
     top: 0
     right: 0
     border: none
+    cursor: pointer
     background-color: $primary-color
-
+// User personal account in the header
 .user
   display: flex
   align-items: center
@@ -44,7 +70,9 @@
     height: 40px
     border-radius: 50%
     object-fit: cover
+    cursor: pointer
   &__name
     font-size: 14px
+    cursor: pointer
     color: $text-color
 
