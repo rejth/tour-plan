@@ -1,94 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Tour Plan</title>
-  </head>
 
-  <body>
-    <!-- Header - navigation bar -->
-    <header class="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Tour Plan</title>
+</head>
+
+<body>
+  <!-- Header - navigation bar -->
+  <header class="navbar">
+    <div class="container">
+      <!-- Top of the navigation bar -->
+      <div class="navbar-top">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <img src="img/logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
+        </a>
+        <!-- Search Form -->
+        <form action="#" class="search navbar__search">
+          <input type="text" class="search__input" placeholder="Search Location" />
+          <button class="search__button">
+            <img src="img/search.svg" alt="Icon: search" class="search__image" />
+          </button>
+        </form>
+        <!-- User personal account-->
+        <a href="#" class="user">
+          <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+          <span class="user__name">Nathan</span>
+        </a>
+      </div>
+      <!-- /.navbar-top -->
+    </div>
+    <!-- /.container -->
+    <!-- Bootom of the navigation bar -->
+    <nav class="navbar-menu">
       <div class="container">
-        <!-- Top of the navigation bar -->
-        <div class="navbar-top">
-          <!-- Logo -->
-          <a href="#" class="logo">
-            <img
-              src="img/logo.svg"
-              alt="Logo: Best Tour Plan"
-              class="logo__image"
-            />
-          </a>
-          <!-- Search Form -->
-          <form action="#" class="search navbar__search">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
-            <button class="search__button">
-              <img
-                src="img/search.svg"
-                alt="Icon: search"
-                class="search__image"
-              />
-            </button>
-          </form>
-          <!-- User personal account-->
-          <a href="#" class="user">
-            <img
-              src="img/user-avatar.jpg"
-              alt="Avatar: Nathan"
-              class="user__avatar"
-            />
-            <span class="user__name">Nathan</span>
-          </a>
-        </div>
-        <!-- /.navbar-top -->
+        <ul class="navbar-menu__list">
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">All Deals</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotels</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Activities</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Restaurants</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Events</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Rodrigues</a>
+          </li>
+        </ul>
       </div>
       <!-- /.container -->
-      <!-- Bootom of the navigation bar -->
-      <nav class="navbar-menu">
-        <div class="container">
-          <ul class="navbar-menu__list">
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.container -->
-      </nav>
-      <!-- /.navbar-menu -->
-    </header>
-    <!-- /.navbar -->
-  </body>
+    </nav>
+    <!-- /.navbar-menu -->
+  </header>
+  <!-- /.navbar -->
+</body>
+
 </html>

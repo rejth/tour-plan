@@ -5,11 +5,16 @@
 
 body {
   font-family: "Mulish", sans-serif;
+  color: #333333;
 }
 
 .container {
   max-width: 1110px;
   margin: auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 .navbar {
