@@ -1,13 +1,12 @@
 // Header - navigation bar
 .navbar
-  background-color: #fff
+  background-color: $default-color
   // Top of the header
   &-top 
     display: flex
+    padding: 40px 0
     align-items: center
     justify-content: space-between
-    padding-top: 40px
-    padding-bottom: 40px
   &__search
     margin: auto
     margin-left: 108px
@@ -31,6 +30,8 @@
       text-decoration: none
       cursor: pointer
       color: inherit
+  &__menu-button
+    display: none
 // Logo in the header
 .logo
   max-width: 177px
@@ -49,7 +50,7 @@
     font-size: 12px
     border: none
     color: $text-color
-    background-color: #F5FAFE
+    background-color: $light
   &__button 
     position: absolute
     width: 65px

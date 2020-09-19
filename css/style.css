@@ -18,21 +18,20 @@ img {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .navbar__search {
@@ -69,6 +68,10 @@ img {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+}
+
+.navbar__menu-button {
+  display: none;
 }
 
 .logo {
@@ -131,4 +134,79 @@ img {
   font-size: 14px;
   cursor: pointer;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding: 30px 0;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-menu {
+    padding: 22px 0;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .logo {
+    max-width: 132px;
+  }
+  .search__input {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 90%;
+  }
+  .navbar-top {
+    padding: 28px 0;
+  }
+  .navbar__search, .navbar__user, .navbar-menu {
+    display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 99px;
+  }
 }
