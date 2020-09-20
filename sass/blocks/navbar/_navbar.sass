@@ -1,0 +1,84 @@
+// Header - navigation bar
+.navbar
+  background-color: $default-color
+
+// Top of the navigation bar
+.navbar-top
+  display: flex
+  padding: 40px 0
+  align-items: center
+  justify-content: space-between
+  // Search form in the navigation bar
+  &__search
+    display: flex
+    position: relative
+    height: 40px
+    overflow: hidden
+    border-radius: 6px
+  &__search-input  
+    padding-left: 23px
+    padding-right: 75px
+    width: 350px
+    height: 100%
+    font-size: 12px
+    border: none
+    color: $text-color
+    background-color: $light
+  &__search-button 
+    position: absolute
+    width: 65px
+    height: 100%
+    top: 0
+    right: 0
+    border: none
+    cursor: pointer
+    background-color: $primary-color
+  // User personal account in the navigation bar
+  &__user
+    display: flex
+    align-items: center
+    text-decoration: none
+  &__user-avatar
+    margin-right: 18px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover
+    cursor: pointer
+  &__user-name
+    font-size: 14px
+    cursor: pointer
+    color: $text-color
+  // Button for media-request 768px
+  &__menu-button
+    display: none
+
+// Logo in the navigation bar
+.logo
+  max-width: 177px
+
+// Search form in the navigation bar
+.search
+  margin: auto
+  margin-left: 108px
+
+// Bootom of the navigation bar
+.navbar-menu
+  padding: 31px 0
+  background-color: $dark
+  &__list
+    display: flex
+    margin: 0
+    padding: 0
+    align-items: center
+    justify-content: space-between
+    list-style-type: none
+    color: $light
+  &__link
+    font-weight: bold
+    font-size: 14px
+    line-height: 18px
+    text-transform: uppercase
+    text-decoration: none
+    cursor: pointer
+    color: inherit
