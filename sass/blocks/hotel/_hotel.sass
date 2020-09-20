@@ -16,18 +16,18 @@
     background: $primary-color
 .text
   &__hotel-name
+    display: inline-block
+    position: relative
     margin: 0
+    margin-top: 5px
     font-weight: bold
     font-size: 24px
     line-height: 30px
     color: $text-color
-  &__description
-    margin: 0
-    font-size: 12px
-    line-height: 15px
-    color: $text-color
   &__offer
+    position: absolute
     padding: 4px 9px
+    margin: 9px 0 0 14px
     width: 70px
     height: 20px
     font-weight: 600
@@ -37,6 +37,11 @@
     border-radius: 3px
     color: $light
     background-color: $primary-color
+  &__description
+    margin: 0
+    font-size: 12px
+    line-height: 15px
+    color: $text-color
 .rating
   &__text
     font-weight: 600

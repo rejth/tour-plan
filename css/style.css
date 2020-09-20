@@ -203,22 +203,20 @@ img {
 }
 
 .text__hotel-name {
+  display: inline-block;
+  position: relative;
   margin: 0;
+  margin-top: 5px;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #333333;
 }
 
-.text__description {
-  margin: 0;
-  font-size: 12px;
-  line-height: 15px;
-  color: #333333;
-}
-
 .text__offer {
+  position: absolute;
   padding: 4px 9px;
+  margin: 9px 0 0 14px;
   width: 70px;
   height: 20px;
   font-weight: 600;
@@ -228,6 +226,13 @@ img {
   border-radius: 3px;
   color: #FFFFFF;
   background-color: #EC1F46;
+}
+
+.text__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
 }
 
 .rating__text {
