@@ -5,6 +5,7 @@
 
 body {
   font-family: "Mulish", sans-serif;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -52,7 +53,7 @@ img {
   font-size: 12px;
   border: none;
   color: #333333;
-  background-color: #F5FAFE;
+  background-color: #FFFFFF;
 }
 
 .navbar-top__search-button {
@@ -123,7 +124,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
-  color: #F5FAFE;
+  color: #FFFFFF;
 }
 
 .navbar-menu__link {
