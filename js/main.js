@@ -2,14 +2,9 @@ var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   loop: true,
 
-  // Pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider__button--next',
+    prevEl: '.slider__button--prev',
   }
 })

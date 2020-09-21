@@ -247,9 +247,58 @@ img {
   background-color: #EC1F46;
 }
 
+.hotel-grid {
+  margin-top: 20px;
+}
+
 .swiper-container {
-  width: 600px;
-  height: 300px;
+  position: relative;
+  margin: 0;
+  max-width: 728px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.swiper-container::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.slider__button--prev {
+  left: 16px;
+  background-image: url(../sass/blocks/hotel/img/arrow.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slider__button--next {
+  right: 16px;
+  background-image: url(../sass/blocks/hotel/img/arrow.svg);
 }
 
 @media (max-width: 1200px) {
