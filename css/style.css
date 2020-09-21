@@ -247,6 +247,11 @@ img {
   background-color: #EC1F46;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
