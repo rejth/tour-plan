@@ -68,8 +68,8 @@
 .swiper-container
   position: relative
   margin: 0
-  max-width: 728px
-  height: 450px
+  width: 100%
+  height: 100%
   border-radius: 8px
   &::after
     position: absolute
@@ -85,6 +85,8 @@
 
 // Slider block
 .slider
+  width: 728px
+  height: 450px
   // Slider buttons
   &__button
     position: absolute
@@ -197,6 +199,7 @@
 
 // Map block
 .map
-  max-width: 347px
-  min-height: 213px
-  background-color: red
+  width: 347px
+  height: 213px
+  border-radius: 8px
+  overflow: hidden

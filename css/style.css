@@ -264,8 +264,8 @@ img {
 .swiper-container {
   position: relative;
   margin: 0;
-  max-width: 728px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -281,6 +281,11 @@ img {
   content: '';
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.slider {
+  width: 728px;
+  height: 450px;
 }
 
 .slider__button {
@@ -452,14 +457,24 @@ img {
 }
 
 .map {
-  max-width: 347px;
-  min-height: 213px;
-  background-color: red;
+  width: 347px;
+  height: 213px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -485,6 +500,29 @@ img {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .hotel-booking {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 350px;
+  }
+  .map {
+    width: 340px;
+    height: 210px;
   }
 }
 
@@ -558,10 +596,31 @@ img {
         -ms-flex-order: -1;
             order: -1;
   }
+  .slider {
+    height: 350px;
+  }
+  .hotel-booking {
+    min-height: 450px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking {
+    marging-top: 20px;
+    width: 100%;
+  }
+  .map {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     max-width: 99px;
+  }
+  .slider {
+    height: 180px;
   }
 }
