@@ -1,37 +1,58 @@
-@media (max-width: 1200px)
+@media ( max-width: 1200px )
   .container
     max-width: 960px
+  .slider
+    width: 590px
+  .swiper-slide
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+
 @media ( max-width: 992px )
   .container
     max-width: 700px
-  .navbar
-    &-top
-      padding: 30px 0
+  // Top of the navigation bar
+  .navbar-top
+    padding: 30px 0
     &__search
       margin-left: auto
-    &-menu
-      padding: 22px 0
-      &__link
-        font-size: 12px
-        line-height: 15px
+    &__search-input
+      width: 340px
+  // Logo in the navigation bar
   .logo
     max-width: 132px
-  .search
-    &__input
-      width: 340px
+  // Bootom of the navigation bar
+  .navbar-menu
+    padding: 22px 0
+    &__link
+      font-size: 12px
+      line-height: 15px
+  .hotel-grid
+    flex-direction: column
+  .slider
+    width: 100%
+    margin-bottom: 30px
+  .hotel-booking
+    flex-direction: row
+  .booking
+    width: 350px
+  .map
+    width: 340px
+    height: 210px
+
+
 @media ( max-width: 768px )
   .container
     max-width: 576px
     width: 90%
-  .navbar
-    &-top
-      padding: 28px 0
-    &__search, &__user, &-menu
+  // Top of the navigation bar
+  .navbar-top
+    padding: 28px 0
+    &__search, &__user
       display: none
-  .menu
-    &-button
+    &__menu-button
       display: flex
-      // Некоторые браузеры добавляют лишние отступы
       padding: 0
       width: 16px
       height: 11px
@@ -40,13 +61,51 @@
       justify-content: space-between
       border: none
       cursor: pointer
-      background-color: $default-color
-      &__line
-        width: 16px
-        height: 1px
-        background-color: $text-color
+      background-color: $light
+    &__menu-button-line
+      width: 16px
+      height: 1px
+      background-color: $text-color
+  // Bootom of the navigation bar
+  .navbar-menu
+    display: none
+  // Hotel block
+  .hotel
+    padding-top: 0
+    padding-bottom: 40px
+  // Hotel info block
+  .hotel-info
+    &__text
+      width: 100%
+    &__rating
+      display: none
+  // Text wrapper block
+  .hotel-wrapper
+    justify-content: space-between
+    &__stars
+      flex-basis: auto
+    &__hotel-name
+      flex-basis: 100%
+      margin-top: 10px
+    &__offer
+      margin-left: 0
+      order: -1
+  .slider
+    height: 350px
+  .hotel-booking
+    min-height: 450px
+    flex-direction: column
+  .booking
+    marging-top: 20px
+    width: 100%
+  .map
+    margin-top: 20px
+    width: 100%
+
 @media ( max-width: 576px)
   .logo
     max-width: 99px
+  .slider
+    height: 180px
 
   
