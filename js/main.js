@@ -1,10 +1,11 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.hotel-slider__container', {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider__button--next',
-    prevEl: '.slider__button--prev',
-  }
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
+  },
+  effect: "coverflow"
 })

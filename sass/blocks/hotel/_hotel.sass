@@ -64,29 +64,28 @@
   margin-top: 20px 
   justify-content: space-between
 
-// Slider container
-.swiper-container
-  position: relative
+// Hotel Slider Block
+.hotel-slider
   margin: 0
-  width: 100%
-  height: 100%
-  border-radius: 8px
-  &::after
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    width: 100%
-    height: 100%
-    z-index: 1
-    content: ''
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-
-// Slider block
-.slider
   width: 728px
   height: 450px
+  &__container
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 8px
+    // Top additional layout
+    &::after
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+      content: ''
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
   // Slider buttons
   &__button
     position: absolute
