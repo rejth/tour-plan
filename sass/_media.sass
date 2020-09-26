@@ -1,15 +1,17 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
+  // Hotel slider
   .hotel-slider
     width: 590px
+    // Slide image
     &__image
       width: 100%
       height: 100%
       object-fit: cover
 
 @media ( max-width: 992px )
-  .container, 
+  .container,
   .newsletter__wrapper
     max-width: 700px
   // Top of the navigation bar
@@ -30,17 +32,24 @@
       line-height: 15px
   .hotel-grid
     flex-direction: column
+  // Hotel slider
   .hotel-slider
     width: 100%
     margin-bottom: 30px
+  // Hotel booking
   .hotel-booking
     flex-direction: row
+  // Hotel booking
   .booking
     width: 350px
+  // Geo map
   .map
     width: 340px
     height: 210px
-
+  // Reviews slider
+  .reviews-slider
+    &__item
+      max-width: 580px
 
 @media ( max-width: 768px )
   .container
@@ -90,19 +99,25 @@
     &__offer
       margin-left: 0
       order: -1
+  // Hotel slider
   .hotel-slider
     height: 350px
+  // Hotel booking
   .hotel-booking
     min-height: 450px
     flex-direction: column
+  // Hotel booking
   .booking
     marging-top: 20px
     width: 100%
+  // Geo map
   .map
     margin-top: 20px
     width: 100%
+  // Newsletter
   .newsletter
     padding: 76px 0 83px 0
+    height: 319px
     &__wrapper
       max-width: 576px
       width: 90%
@@ -110,14 +125,40 @@
       align-items: flex-start
     &__title
       margin-bottom: 37px
-      
-@media ( max-width: 576px)
+  // Reviews
+  .reviews
+    &__title
+      margin-bottom: 50px
+  // Reviews slider
+  .reviews-slider
+    &__item
+      padding: 0 30px 30px
+      &::after, &::before
+        display: none
+    &__button
+      top: 32px
+    &__button--prev
+      margin-left: -65px
+      left: 50%
+      transform: translateX(-50%)
+    &__button--next
+      margin-right: -65px
+      right: 50%
+      transform: translateX(50%)
+
+@media ( max-width: 576px )
   .logo
     max-width: 99px
+  // Hotel slider
   .hotel-slider
     height: 180px
+  // Reviews
+  .reviews
+    &__title
+      margin-bottom: 42px
 
 @media ( min-width: 320px ) and ( max-width: 480px )
+  // Newsletter
   .newsletter
     &__title
       font-size: 20px
@@ -127,5 +168,8 @@
       line-height: 38px
     &__subscribe
       width: 100%
-
-  
+  // Reviews
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px

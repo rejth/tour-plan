@@ -306,9 +306,7 @@ img {
 
 .hotel-slider__button--prev {
   left: 16px;
-  background-image: url(../sass/blocks/hotel/img/arrow.svg);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  background-image: url(../sass/blocks/hotel/img/arrow-left.svg);
 }
 
 .hotel-slider__button--next {
@@ -582,7 +580,7 @@ img {
   display: flex;
   margin: 45px auto 0;
   padding: 0 62px 30px;
-  width: 730px;
+  max-width: 730px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -662,15 +660,13 @@ img {
 }
 
 .reviews-slider__button--prev {
-  left: 16px;
+  left: 0;
   background-image: url(../sass/blocks/reviews/img/arrow.svg);
 }
 
 .reviews-slider__button--next {
-  right: 16px;
-  background-image: url(../sass/blocks/reviews/img/arrow.svg);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  right: 0;
+  background-image: url(../sass/blocks/reviews/img/arrow-right.svg);
 }
 
 .profile__avatar {
@@ -759,6 +755,9 @@ img {
   .map {
     width: 340px;
     height: 210px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -852,6 +851,7 @@ img {
   }
   .newsletter {
     padding: 76px 0 83px 0;
+    height: 319px;
   }
   .newsletter__wrapper {
     max-width: 576px;
@@ -867,6 +867,30 @@ img {
   .newsletter__title {
     margin-bottom: 37px;
   }
+  .reviews__title {
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -65px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .reviews-slider__button--next {
+    margin-right: -65px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
 }
 
 @media (max-width: 576px) {
@@ -875,6 +899,9 @@ img {
   }
   .hotel-slider {
     height: 180px;
+  }
+  .reviews__title {
+    margin-bottom: 42px;
   }
 }
 
@@ -889,5 +916,9 @@ img {
   }
   .newsletter__subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
