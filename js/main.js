@@ -1,3 +1,4 @@
+// Hotel slider
 var hotelSlider = new Swiper('.hotel-slider__container', {
   // Optional parameters
   loop: true,
@@ -6,9 +7,11 @@ var hotelSlider = new Swiper('.hotel-slider__container', {
   navigation: {
     nextEl: '.hotel-slider__button--next',
     prevEl: '.hotel-slider__button--prev',
-  }
+  },
+  effect: "coverflow"
 });
 
+// Review slider
 var reviewSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
