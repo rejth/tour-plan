@@ -454,7 +454,7 @@ img {
   color: #FFFFFF;
 }
 
-.map {
+#map {
   width: 347px;
   height: 213px;
   border-radius: 8px;
@@ -852,8 +852,8 @@ img {
   .booking {
     width: 350px;
   }
-  .map {
-    width: 340px;
+  #map {
+    width: 335px;
     height: 210px;
   }
   .reviews-slider__item {
@@ -957,7 +957,7 @@ img {
     marging-top: 20px;
     width: 100%;
   }
-  .map {
+  #map {
     margin-top: 20px;
     width: 100%;
   }
