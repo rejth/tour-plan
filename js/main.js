@@ -2,6 +2,10 @@
 var hotelSlider = new Swiper('.hotel-slider__container', {
   // Optional parameters
   loop: true,
+  slidesPerView: 1,
+  keyboard: {
+    enabled: true,
+  },
 
   // Navigation arrows
   navigation: {
@@ -15,6 +19,10 @@ var hotelSlider = new Swiper('.hotel-slider__container', {
 var reviewSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
+  slidesPerView: 1,
+  keyboard: {
+    enabled: true,
+  },
 
   // Navigation arrows
   navigation: {
