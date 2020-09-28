@@ -1,0 +1,102 @@
+// Reviews Block
+.reviews
+  padding: 40px 0 40px 0
+  background-color: $secondary-color
+  // Title
+  &__title
+    margin: 0
+    margin-bottom: 70px
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: $text-color
+// Reviews slider
+.reviews-slider
+  &__item
+    position: relative
+    display: flex
+    margin: 45px auto 0
+    padding: 0 62px 30px
+    max-width: 730px
+    flex-direction: column
+    align-items: center
+    border-radius: 8px
+    background-color: $light
+    &::before
+      position: absolute
+      top: 13px
+      left: 64px
+      width: 70px
+      height: 48px
+      content: ''
+      background-repeat: no-repeate
+      background-image: url(../sass/blocks/reviews/img/quote.png)
+    &::after
+      position: absolute
+      top: 118px
+      right: 60px
+      width: 70px
+      height: 48px
+      content: ''
+      background-repeat: no-repeate
+      background-image: url(../sass/blocks/reviews/img/quote.png)
+      transform: rotate(180deg)
+  // Reviewer profile
+  &__profile
+    display: flex
+    margin-top: -45px
+    margin-bottom: 30px
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+  // Text review
+  &__text-review
+    margin: 0
+    max-width: 537px
+    font-size: 12px
+    line-height: 160%
+    text-align: justify
+    color: $text-color
+  // Slider buttons
+  &__button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    z-index: 2
+    cursor: pointer
+    border: none
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+  &__button--prev
+    left: 0
+    background-image: url(../sass/blocks/reviews/img/arrow.svg)
+  &__button--next
+    right: 0
+    background-image: url(../sass/blocks/reviews/img/arrow-right.svg)
+
+  // Reviewer profile
+.profile
+  &__avatar
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    object-fit: cover
+    cursor: pointer
+  &__user
+    margin: 0
+    margin-top: 8px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $primary-color
+  &__date
+    margin-top: 8px
+    font-size: 10px
+    line-height: 13px
+    color: $text-color

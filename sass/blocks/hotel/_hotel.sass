@@ -61,32 +61,31 @@
 // Hotel grid block
 .hotel-grid
   display: flex
-  margin-top: 20px 
+  margin-top: 20px
   justify-content: space-between
 
-// Slider container
-.swiper-container
-  position: relative
+// Hotel Slider Block
+.hotel-slider
   margin: 0
-  width: 100%
-  height: 100%
-  border-radius: 8px
-  &::after
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    width: 100%
-    height: 100%
-    z-index: 1
-    content: ''
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-
-// Slider block
-.slider
   width: 728px
   height: 450px
+  &__container
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 8px
+    // Top additional layout
+    &::after
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+      content: ''
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
   // Slider buttons
   &__button
     position: absolute
@@ -103,8 +102,7 @@
     background-color: transparent
   &__button--prev
     left: 16px
-    background-image: url(../sass/blocks/hotel/img/arrow.svg)
-    transform: rotate(180deg)
+    background-image: url(../sass/blocks/hotel/img/arrow-left.svg)
   &__button--next
     right: 16px
     background-image: url(../sass/blocks/hotel/img/arrow.svg)
@@ -198,7 +196,7 @@
     color: $light
 
 // Map block
-.map
+#map
   width: 347px
   height: 213px
   border-radius: 8px
