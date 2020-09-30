@@ -1087,9 +1087,10 @@ img {
     padding-bottom: 33px;
   }
   .footer__wrapper {
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-columns: 3fr 18px 5fr 18px 4fr;
+        grid-template-columns: 3fr 18px 5fr 18px 4fr;
     grid-row-gap: 60px;
+    grid-column-gap: 10px;
   }
   .footer__logo {
     width: 104px;
@@ -1111,23 +1112,33 @@ img {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
-    grid-column: span 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
   }
   .footer__information {
-    grid-column: span 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
   }
   .footer__legal {
-    grid-column: span 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/ 6;
   }
   .footer__contact-details {
     -ms-grid-row: 3;
     grid-row: 3;
-    grid-column: span 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
   .footer__contact-form {
     -ms-grid-row: 4;
     grid-row: 4;
-    grid-column: span 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
 }
 
@@ -1281,6 +1292,12 @@ img {
   .card {
     margin-bottom: 20px;
     width: 100%;
+  }
+  .footer__input {
+    margin-top: 0;
+    margin-bottom: 15px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 

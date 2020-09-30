@@ -71,8 +71,9 @@
     padding-top: 73px
     padding-bottom: 33px
     &__wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: 3fr 18px 5fr 18px 4fr
       grid-row-gap: 60px
+      grid-column-gap: 10px
     &__logo
       width: 104px
       grid-row: 1 / 2
@@ -83,17 +84,17 @@
       align-self: center
     &__categories
       grid-row: 2 / 3
-      grid-column: span 2
+      grid-column: 1 / 2
     &__information
-      grid-column: span 2
+      grid-column: 3 / 4
     &__legal
-      grid-column: span 2
+      grid-column: 5/ 6
     &__contact-details
       grid-row: 3
-      grid-column: span 5
+      grid-column: 1 / 5
     &__contact-form
       grid-row: 4
-      grid-column: span 5
+      grid-column: 1 / 5
 
 @media ( max-width: 768px )
   .container
@@ -205,6 +206,11 @@
   .card
     margin-bottom: 20px
     width: 100%
+  .footer
+    &__input
+      margin-top: 0
+      margin-bottom: 15px
+      flex-basis: 100%
 
 @media ( max-width: 576px )
   .logo
