@@ -13,6 +13,9 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__wrapper
+      grid-template-columns: 166px 20px 6fr 20px 9fr 20px 7fr
 
 @media ( max-width: 992px )
   .container,
@@ -64,6 +67,33 @@
     margin-bottom: 20px
     width: 338px
     height: 255px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &__wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 60px
+    &__logo
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social-network
+      grid-row: 1 / 2
+      grid-column: span 4
+      align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__information
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__contact-details
+      grid-row: 3
+      grid-column: span 5
+    &__contact-form
+      grid-row: 4
+      grid-column: span 5
 
 @media ( max-width: 768px )
   .container
@@ -195,6 +225,33 @@
   // Activity card
   .card
     margin-bottom: 28px
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social-network
+      grid-row: 2
+      grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__information
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact-details
+      grid-row: 6
+      grid-column: 1
+    &__contact-form
+      grid-row: 7
+      grid-column: 1
 
 @media ( min-width: 320px ) and ( max-width: 480px )
   // Newsletter
