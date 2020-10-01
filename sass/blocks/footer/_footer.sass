@@ -113,24 +113,23 @@
     color: $footer-text-color
   &__policy
     margin-top: 95px
-    // display: grid
-    // grid-template-columns: repeat(3, 1fr)
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
   &__policy-links
     display: flex
+    flex-wrap: wrap
     align-items: center
-    // flex-wrap: wrap
-    justify-content: flex-end
-    // grid-column: 2 / 3
-    // grid-auto-rows: minmax(40px, auto)
+    justify-content: center
+    grid-column: 2 / 3
+    grid-auto-rows: minmax(40px, auto)
   &__policy-link
-    margin-left: 11px
     font-size: 12px
     line-height: 15px
     text-decoration: none
     color: $light
-    // &:nth-child(2)
-    //   margin-left: 11px
-    //   margin-right: 11px
+    &:nth-child(even)
+      margin-left: 11px
+      margin-right: 11px
   &__policy-image
-    margin-left: 277px
     min-width: 136px
+    text-align: right
