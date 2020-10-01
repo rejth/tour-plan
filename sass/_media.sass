@@ -13,6 +13,7 @@
   .card
     width: 230px
     height: 230px
+  // Footer
   .footer
     &__wrapper
       grid-template-columns: 166px 20px 6fr 20px 9fr 20px 7fr
@@ -67,34 +68,54 @@
     margin-bottom: 20px
     width: 338px
     height: 255px
+  // Footer
   .footer
     padding-top: 73px
     padding-bottom: 33px
+    // Footer wrapper
     &__wrapper
       grid-template-columns: 3fr 18px 5fr 18px 4fr
       grid-row-gap: 60px
       grid-column-gap: 10px
+    // Footer Logo
     &__logo
       width: 104px
       grid-row: 1 / 2
       grid-column: span 2
+    // Social network block
     &__social-network
       grid-row: 1 / 2
       grid-column: span 4
       align-self: center
+    // All categories block
     &__categories
       grid-row: 2 / 3
       grid-column: 1 / 2
+    // Additional information block
     &__information
       grid-column: 3 / 4
+    // Legal information block
     &__legal
       grid-column: 5/ 6
+    // Contact details block
     &__contact-details
       grid-row: 3
       grid-column: 1 / 5
+    // Contact form block
     &__contact-form
       grid-row: 4
       grid-column: 1 / 5
+    // Policy block
+    &__policy
+      margin-top: 56px
+      grid-template-columns: repeat(2, 1fr)
+    // Policy links
+    &__policy-links
+      grid-column: 1 / 2
+      justify-content: flex-start
+    // Payment systems images
+    &__policy-image
+      grid-column: 2 / 3
 
 @media ( max-width: 768px )
   .container
@@ -206,7 +227,9 @@
   .card
     margin-bottom: 20px
     width: 100%
+  // Footer
   .footer
+    // Contact form inputs
     &__input
       margin-top: 0
       margin-bottom: 15px
@@ -231,33 +254,66 @@
   // Activity card
   .card
     margin-bottom: 28px
+  // Footer
   .footer
     padding-top: 69px
     padding-bottom: 21px
+    // Footer wrapper
     &__wrapper
       grid-template-columns: 1fr
       grid-row-gap: 30px
+    // Footer Logo
     &__logo
       grid-row: 1
       grid-column: 1
+    // Social network block
     &__social-network
+      flex-direction: column
       grid-row: 2
       grid-column: 1
+    // Social network title
+    &__title--inline
+      margin-right: 0
+      margin-bottom: 22px
+    // Social network links
+    &__social-links
+      flex-direction: row
+      max-width: 83px
+    // Legal information block
     &__legal
       grid-row: 3
       grid-column: 1
+    // Additional information block
     &__information
       grid-row: 4
       grid-column: 1
+    // All categories block
     &__categories
       grid-row: 5
       grid-column: 1
+    // Contact details block
     &__contact-details
       grid-row: 6
       grid-column: 1
+    // Contact form block
     &__contact-form
       grid-row: 7
       grid-column: 1
+    // Policy block
+    &__policy
+      margin-top: 30px
+      grid-template-columns: 1fr
+    // Policy links
+    &__policy-links
+      grid-row: 1
+      grid-column: 1
+      justify-content: flex-start
+    // Payment systems images
+    &__policy-image
+      margin-top: 10px
+      grid-row: 2
+      grid-column: 1
+      text-align: left
 
 @media ( min-width: 320px ) and ( max-width: 480px )
   // Newsletter
