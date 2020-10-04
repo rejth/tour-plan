@@ -118,14 +118,28 @@
       grid-column: 2 / 3
 
 @media ( max-width: 768px )
+  body
+    padding-top: 80px
+  body.no-scroll
+    overflow-y: hidden
   .container
     max-width: 576px
     width: 90%
+  .navbar--mobile-fixed
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 100
   // Top of the navigation bar
   .navbar-top
     padding: 28px 0
-    &__search, &__user
+    &__search--mobile-hidden, &__user--mobile-hidden
       display: none
+    &__search--mobile-visible, &__user--mobile-visible
+      display: flex
+    &__search--mobile-visible
+      margin-bottom: 19px
     &__menu-button
       display: flex
       padding: 0
@@ -141,9 +155,33 @@
       width: 16px
       height: 1px
       background-color: $text-color
+    &__user
+      flex-direction: column
+    &__user-name--light
+      margin-top: 20px
+      margin-bottom: 7px
+      margin-left: 0
+      color: $light
+    &__user-avatar--mr-0
+      margin-right: 0
   // Bootom of the navigation bar
   .navbar-menu
+    position: fixed
     display: none
+    padding: 31px 38px 68px 38px
+    left: 0
+    right: 0
+    bottom: 0
+    top: 80px
+    &__list
+      flex-direction: column
+    &__item
+      margin-bottom: 20px
+    &__item--mobile-visible
+      display: block
+  .navbar-menu--visible
+    display: block
+    height: 100%
   // Hotel block
   .hotel
     padding-top: 0
@@ -316,6 +354,14 @@
       text-align: left
 
 @media ( min-width: 320px ) and ( max-width: 480px )
+  // Top of the navigation bar
+  .navbar-top
+    &__search--mobile-visible
+      width: 100%
+  // Bootom of the navigation bar
+  .navbar-menu
+    &__item--mobile-width-100
+      width: 100%
   // Newsletter
   .newsletter
     &__title

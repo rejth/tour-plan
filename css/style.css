@@ -115,6 +115,10 @@ img {
   background-color: #0A223D;
 }
 
+.navbar-menu__item--mobile-visible {
+  display: none;
+}
+
 .navbar-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1204,15 +1208,36 @@ img {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+  body.no-scroll {
+    overflow-y: hidden;
+  }
   .container {
     max-width: 576px;
     width: 90%;
   }
+  .navbar--mobile-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
   .navbar-top {
     padding: 28px 0;
   }
-  .navbar-top__search, .navbar-top__user {
+  .navbar-top__search--mobile-hidden, .navbar-top__user--mobile-hidden {
     display: none;
+  }
+  .navbar-top__search--mobile-visible, .navbar-top__user--mobile-visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-top__search--mobile-visible {
+    margin-bottom: 19px;
   }
   .navbar-top__menu-button {
     display: -webkit-box;
@@ -1240,8 +1265,45 @@ img {
     height: 1px;
     background-color: #333333;
   }
+  .navbar-top__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-top__user-name--light {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    margin-left: 0;
+    color: #FFFFFF;
+  }
+  .navbar-top__user-avatar--mr-0 {
+    margin-right: 0;
+  }
   .navbar-menu {
+    position: fixed;
     display: none;
+    padding: 31px 38px 68px 38px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 80px;
+  }
+  .navbar-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile-visible {
+    display: block;
+  }
+  .navbar-menu--visible {
+    display: block;
+    height: 100%;
   }
   .hotel {
     padding-top: 0;
@@ -1473,6 +1535,12 @@ img {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .navbar-top__search--mobile-visible {
+    width: 100%;
+  }
+  .navbar-menu__item--mobile-width-100 {
+    width: 100%;
+  }
   .newsletter__title {
     font-size: 20px;
     line-height: 25px;

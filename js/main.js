@@ -29,4 +29,14 @@ var reviewSlider = new Swiper('.reviews-slider', {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   }
-})
+});
+
+var menuButton = document.querySelector(".menu-button")
+menuButton.addEventListener("click", function () {
+  document
+    .querySelector(".navbar-menu")
+    .classList.toggle("navbar-menu--visible");
+  document
+    .querySelector("body")
+    .classList.toggle("no-scroll");
+});
