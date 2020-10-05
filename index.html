@@ -713,9 +713,35 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax/parallax.js"></script>
+
+  <!-- Modal Window -->
+  <div class="modal">
+    <!-- Background color -->
+    <div class="modal__overlay"></div>
+    <!-- Window -->
+    <div class="modal__dialog">
+      <!-- Close button -->
+      <a href="#" class="modal__close">
+        <img src="sass/blocks/modal/img/close.svg" alt="Image of close button">
+      </a>
+      <!-- Window content -->
+      <h3 class="modal__title">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form">
+        <input type="text" class="modal__input" placeholder="Your Full Name*" name="name" />
+        <input type="text" class="modal__input" placeholder="Phone Number*" name="phone" />
+        <input type="text" class="modal__input" placeholder="Email*" name="email" />
+        <textarea class="modal__message" placeholder="Message" name="message"></textarea>
+        <button class="modal__button">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/parallax/parallax.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a4dae8dc-28d0-408f-829d-ceed1c7ccf8d"></script>
   <script src="js/yandex-map-api/icon_customImage.js"></script>
   <script src="js/main.js"></script>

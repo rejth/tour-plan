@@ -1,0 +1,90 @@
+// Modal window
+.modal
+  // Background color
+  &__overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+  // Window
+  &__dialog
+    position: fixed
+    padding: 33px 88px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 478px
+    border-radius: 8px
+    z-index: 101
+    background-color: $dark
+    color: $light
+  // Close button
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  // Title
+  &__title
+    margin: 0
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+    color: inherit
+  // Modal form
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  // Modal form inputs
+  &__input
+    margin-top: 15px
+    padding: 18px 23px
+    flex-basis: 100%
+    height: 50px
+    font-size: 12px
+    line-height: 15px
+    border: none
+    border-radius: 4px
+    color: $footer-text-color
+    background-color: $light
+  // Modal message form
+  &__message
+    margin-top: 15px
+    margin-bottom: 15px
+    padding: 18px 23px
+    flex-basis: 100%
+    height: 123px
+    font-size: 12px
+    line-height: 15px
+    border: none
+    border-radius: 4px
+    resize: none
+    color: $footer-text-color
+    background-color: $light
+  // Modal form send button
+  &__button
+    padding: 18px
+    min-width: 160px
+    min-height: 50px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    color: $light
+    background-color: $primary-color
+  // Modal form info
+  &__info
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $footer-text-color
