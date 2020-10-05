@@ -961,7 +961,7 @@ img {
   line-height: 15px;
   border: none;
   border-radius: 4px;
-  color: #BDBDBD;
+  color: #333333;
   background-color: #FFFFFF;
 }
 
@@ -976,7 +976,7 @@ img {
   border: none;
   border-radius: 4px;
   resize: none;
-  color: #BDBDBD;
+  color: #333333;
   background-color: #FFFFFF;
 }
 
@@ -998,7 +998,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 .footer__policy {
@@ -1052,6 +1052,15 @@ img {
   right: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 .modal__dialog {
@@ -1066,6 +1075,15 @@ img {
   z-index: 101;
   background-color: #0A223D;
   color: #FFFFFF;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 .modal__close {
@@ -1110,7 +1128,7 @@ img {
   line-height: 15px;
   border: none;
   border-radius: 4px;
-  color: #BDBDBD;
+  color: #333333;
   background-color: #FFFFFF;
 }
 
@@ -1126,7 +1144,7 @@ img {
   border: none;
   border-radius: 4px;
   resize: none;
-  color: #BDBDBD;
+  color: #333333;
   background-color: #FFFFFF;
 }
 
@@ -1148,7 +1166,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {
@@ -1311,6 +1329,9 @@ img {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
+  }
+  .modal__dialog {
+    padding: 33px 58px;
   }
 }
 
@@ -1529,6 +1550,13 @@ img {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__button {
+    margin-top: 15px;
+    width: 100%;
+    -webkit-box-ordinal-group: 101;
+        -ms-flex-order: 100;
+            order: 100;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1638,6 +1666,9 @@ img {
     -ms-grid-column: 1;
     grid-column: 1;
     text-align: left;
+  }
+  .modal__dialog {
+    padding: 33px 40px;
   }
 }
 

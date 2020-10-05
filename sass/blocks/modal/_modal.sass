@@ -9,6 +9,12 @@
     right: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
+    visibility: hidden
+    opacity: 0
+  &__overlay--visible
+    visibility: visible
+    opacity: 1
+    transition: opacity 0.1s
   // Window
   &__dialog
     position: fixed
@@ -21,6 +27,12 @@
     z-index: 101
     background-color: $dark
     color: $light
+    visibility: hidden
+    opacity: 0
+  &__dialog--visible
+    visibility: visible
+    opacity: 1
+    transition: opacity 0.1s
   // Close button
   &__close
     position: absolute
@@ -53,7 +65,7 @@
     line-height: 15px
     border: none
     border-radius: 4px
-    color: $footer-text-color
+    color: $text-color
     background-color: $light
   // Modal message form
   &__message
@@ -67,7 +79,7 @@
     border: none
     border-radius: 4px
     resize: none
-    color: $footer-text-color
+    color: $text-color
     background-color: $light
   // Modal form send button
   &__button
@@ -87,4 +99,4 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
-    color: $footer-text-color
+    color: $required-field-color
