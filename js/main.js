@@ -67,7 +67,7 @@ $(document).ready(function () {
   // Form Validator
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "invalid",
+      errorClass: "invalid animate__animated animate__shakeX",
       rules: {
         name: "required",
         phone: "required",
@@ -89,6 +89,8 @@ $(document).ready(function () {
         }
       }
     });
-  })
+  });
+
+  AOS.init();
 
 });
