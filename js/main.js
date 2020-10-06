@@ -46,10 +46,8 @@ $(document).ready(function () {
   // View other options button to call modal window
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
-  // var ESCCloseButton = $("[data-toggle=onkeydown]");
   modalButton.on("click", openModalWindow);
   closeModalButton.on("click", closeModalWindow);
-  // ESCCloseButton.on("keydown", ESCloseModalWindow);
 
   function openModalWindow() {
     var modalOverlay = $(".modal__overlay");
@@ -66,9 +64,31 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   };
 
-  // function ESCloseModalWindow(event) {
-  //   if (event.keyCode == 27)
-  //     console.log("scsdc")
-  // };
+  // Form Validator
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Please specify your name"
+        },
+        phone: {
+          required: "We need your phone to contact you"
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
+      }
+    });
+  })
 
 });
