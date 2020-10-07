@@ -70,7 +70,10 @@ $(document).ready(function () {
       errorClass: "invalid animate__animated animate__shakeX",
       rules: {
         name: "required",
-        phone: "required",
+        phone: {
+          required: true,
+          minlength: 11
+        },
         email: {
           required: true,
           email: true
@@ -81,7 +84,8 @@ $(document).ready(function () {
           required: "Please specify your name"
         },
         phone: {
-          required: "We need your phone to contact you"
+          required: "We need your phone to contact you",
+          minlength: "Your phone number must be at least 11 digits long"
         },
         email: {
           required: "We need your email address to contact you",
