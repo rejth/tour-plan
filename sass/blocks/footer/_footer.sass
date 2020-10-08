@@ -14,7 +14,7 @@
   // All titles
   &__title
     margin: 0
-    margin-bottom: 16px
+    margin-bottom: 15px
     font-weight: bold
     font-size: 18px
     line-height: 23px
@@ -91,12 +91,17 @@
     justify-content: space-between
     flex-wrap: wrap
   // Contact form inputs
+  &__input-wrapper
+    display: flex
+    flex-basis: 100%
   &__input-group
-    flex-basis: 48%
+    flex-basis: 50%
+  &__input-group + &__input-group
+    margin-left: 30px
   &__input
-    margin-top: 18px
+    margin-top: 19px
     padding: 0 23px
-    flex-basis: 48%
+    justify-content: space-between
     width: 100%
     height: 50px
     font-size: 12px

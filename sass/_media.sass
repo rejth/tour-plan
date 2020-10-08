@@ -273,9 +273,18 @@
   // Footer
   .footer
     // Contact form inputs
+    &__input-wrapper
+      flex-wrap: wrap
     &__input-group
       margin-top: 0
       flex-basis: 100%
+    &__input-group + &__input-group
+      margin-left: 0
+    &__input
+      margin-top: 0
+      margin-bottom: 15px
+    &__message
+      margin-top: 0
     // Modal window
   .modal
     // Window
