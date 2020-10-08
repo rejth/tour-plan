@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet" rel="preload">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Tour Plan</title>
 </head>
@@ -108,10 +107,12 @@
         <!-- Text block -->
         <div class="hotel-info__text text">
           <div class="text__hotel-wrapper hotel-wrapper">
-            <h1 class="hotel-wrapper__hotel-name">Спасибо за обращение!</h1>
+            <h1 class="hotel-wrapper__hotel-name">Thank you for your message!</h1>
           </div>
           <br>
-          <p class="text__hotel-description">Наш менеджер свяжется с Вами через 5 минут!</p>
+          <h3>Our manager will contact you in 5 minutes.</h4>
+            <a class="hotel-wrapper__hotel-name" href="javascript:history.back() class="
+              hotel-wrapper__hotel-name><button class="footer__button">Back</button></a>
         </div>
         <!-- /.hotel-wrapper -->
       </div>
@@ -143,11 +144,35 @@
     <!-- /.newsletter__wrapper -->
   </section>
   <!-- /.newsletter -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax/parallax.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a4dae8dc-28d0-408f-829d-ceed1c7ccf8d"></script>
-  <script src="js/yandex-map-api/icon_customImage.js"></script>
+
+  <!-- Modal Window -->
+  <div class="modal">
+    <!-- Background color -->
+    <div class="modal__overlay"></div>
+    <!-- Window -->
+    <div class="modal__dialog">
+      <!-- Close button -->
+      <a href="#" class="modal__close">
+        <img src="sass/blocks/modal/img/close.svg" alt="Image of close button" />
+      </a>
+      <!-- Window content -->
+      <h3 class="modal__title">Booking</h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <input type="text" class="modal__input" placeholder="Your Full Name*" name="name" />
+        <input type="tel" class="modal__input" placeholder="Phone Number*" name="phone" />
+        <input type="email" class="modal__input" placeholder="Email*" name="email" />
+        <textarea class="modal__message" placeholder="Message" name="message"></textarea>
+        <button class="modal__button">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/parallax/parallax.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
