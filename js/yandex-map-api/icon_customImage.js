@@ -1,7 +1,7 @@
 setTimeout(function () {
   var elem = document.createElement('script');
   elem.type = 'text/javascript';
-  elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU&onload=getYaMap';
+  elem.src = '//api-maps.yandex.ru/2.1.77/?load=package.standard&lang=ru-RU&onload=getYaMap';
   document.getElementsByTagName('body')[0].appendChild(elem);
 }, 2000);
 
