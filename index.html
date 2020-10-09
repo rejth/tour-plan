@@ -761,20 +761,23 @@
     <div class="modal__overlay"></div>
     <!-- Window -->
     <div class="modal__dialog">
-      <!-- Close button -->
-      <a href="#" class="modal__close">
-        <img src="sass/blocks/modal/img/close.svg" alt="Image of close button" />
-      </a>
-      <!-- Window content -->
-      <h3 class="modal__title">Booking</h3>
-      <form action="send.php" method="POST" class="form modal__form">
-        <input type="text" class="modal__input" placeholder="Your Full Name*" name="name" />
-        <input type="tel" class="modal__input" placeholder="Phone Number*" name="phone" />
-        <input type="email" class="modal__input" placeholder="Email*" name="email" />
-        <textarea class="modal__message" placeholder="Message" name="message"></textarea>
-        <button class="modal__button">Send</button>
-        <span class="modal__info">* Required Fields</span>
-      </form>
+      <div class="modal__dialog-guts">
+        <!-- Close button -->
+        <a href="#" class="modal__close">
+          <img src="sass/blocks/modal/img/close.svg" alt="Image of close button" />
+        </a>
+        <!-- Window content -->
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input type="text" class="modal__input" placeholder="Your Full Name*" name="name" />
+          <input type="tel" class="modal__input" placeholder="Phone Number*" name="phone" />
+          <input type="email" class="modal__input" placeholder="Email*" name="email" />
+          <textarea class="modal__message" placeholder="Message" name="message"></textarea>
+          <button class="modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog-guts -->
     </div>
     <!-- /.modal__dialog -->
   </div>
