@@ -2,6 +2,7 @@ $(document).ready(function () {
   // Hotel slider
   var hotelSlider = new Swiper('.hotel-slider__container', {
     // Optional parameters
+    autoHeight: true,
     loop: true,
     slidesPerView: 1,
     keyboard: {
@@ -19,6 +20,7 @@ $(document).ready(function () {
   // Review slider
   var reviewSlider = new Swiper('.reviews-slider', {
     // Optional parameters
+    autoHeight: true,
     loop: true,
     slidesPerView: 1,
     keyboard: {
