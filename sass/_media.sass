@@ -415,6 +415,26 @@
     &__dialog
       padding: 33px 40px
 
+@media ( min-width: 320px ) and ( max-width: 480px ) and ( orientation: landscape )
+  .modal
+    &__dialog
+      height: 487px
+      max-height: 100%
+    &__dialog-guts
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      padding: 33px 40px
+      overflow: auto
+    &__button
+      margin-bottom: 33px
+    &__info
+      margin-bottom: 33px
+
 @media ( min-width: 320px ) and ( max-width: 480px )
   // Top of the navigation bar
   .navbar-top
