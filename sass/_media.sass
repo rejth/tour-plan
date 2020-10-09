@@ -145,10 +145,6 @@
     padding: 28px 0
     &__search--mobile-hidden, &__user--mobile-hidden
       display: none
-    &__search--mobile-visible, &__user--mobile-visible
-      display: flex
-    &__search--mobile-visible
-      margin-bottom: 19px
     &__menu-button
       display: flex
       padding: 0
@@ -166,13 +162,6 @@
       background-color: $text-color
     &__user
       flex-direction: column
-    &__user-name--light
-      margin-top: 20px
-      margin-bottom: 7px
-      margin-left: 0
-      color: $light
-    &__user-avatar--mr-0
-      margin-right: 0
   // Bootom of the navigation bar
   .navbar-menu
     position: fixed
@@ -186,6 +175,22 @@
       flex-direction: column
     &__item
       margin-bottom: 20px
+    &__item--mobile-visible
+      display: block
+    &__search--mobile-visible, &__user--mobile-visible
+      display: flex
+    &__search--mobile-visible
+      margin-left: 0
+      margin-bottom: 19px
+    &__user
+      flex-direction: column
+    &__user-name--light
+      margin-top: 20px
+      margin-bottom: 7px
+      margin-left: 0
+      color: $light
+    &__user-avatar--mr-0
+      margin-right: 0
     &__item--mobile-visible
       display: block
   .navbar-menu--visible
