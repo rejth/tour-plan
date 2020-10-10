@@ -68,7 +68,7 @@ $(document).ready(function () {
   // Form Validator
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "invalid animate__animated animate__shakeX",
+      errorClass: "invalid",
       rules: {
         name: "required",
         phone: {
