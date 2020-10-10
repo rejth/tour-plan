@@ -24,6 +24,9 @@
   button:hover, button:focus
     color: $light
     background-color: #8f1c2a
+  .footer
+    &__link-image:hover
+      box-shadow: 0px 0px 15px 10px #000
 
 @media ( max-width: 992px )
   .container,
@@ -112,6 +115,8 @@
     &__contact-details
       grid-row: 3
       grid-column: 1 / 5
+    &__title--mb-24
+      margin-top: 0
     // Contact form block
     &__contact-form
       grid-row: 4
