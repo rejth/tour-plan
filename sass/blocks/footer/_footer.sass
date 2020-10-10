@@ -7,9 +7,9 @@
   // Footer wrapper
   &__wrapper
     display: grid
-    grid-template-columns: 166px 100px 6fr 40px 8fr 40px 6fr
-    grid-gap: 20px
-    grid-auto-rows: minmax(40px, auto)
+    grid-template-columns: 166px 119px 3.3fr 129px 5.3fr 94px 4fr
+    grid-gap: 0
+    grid-auto-rows: minmax(60px, max-content)
     align-items: start
   // All titles
   &__title
@@ -44,6 +44,7 @@
   &__logo
     display: flex
     align-items: flex-end
+    width: 100%
   // All categories block
   &__categories
     grid-row: 1 / 4
@@ -54,8 +55,9 @@
   // Social network block
   &__social-network
     display: flex
-    grid-row: 2 / 4
+    grid-row: 2 / 3
     grid-column: 5 / 8
+    align-self: center
   // Social network title
   &__title--inline
     margin: 0 43px 0 0
@@ -70,10 +72,11 @@
     grid-column: 7 / 8
   // Contact details block
   &__contact-details
-    grid-column: 1 / 4
+    grid-column: 1 / 5
+    padding-right: 20px
   // Contact details title
   &__title--mb-24
-    margin-top: 12px
+    margin-top: 20px
     margin-bottom: 24px
   // Contact details description
   &__text

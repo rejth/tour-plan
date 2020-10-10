@@ -16,7 +16,8 @@
   // Footer
   .footer
     &__wrapper
-      grid-template-columns: 166px 20px 6fr 20px 9fr 20px 7fr
+      grid-template-columns: 166px 119px 3.3fr 129px 5.3fr 94px 4fr
+      row-gap: 10px
 
 @media (min-width: 992px)
   a:hover, a:focus
@@ -196,6 +197,8 @@
   #map
     width: 49%
     height: 210px
+  .newsletter
+    padding: 92px 0 93px 0
   // Reviews
   .reviews
     &__title
@@ -246,7 +249,7 @@
     // Contact details block
     &__contact-details
       grid-row: 3
-      grid-column: 1 / 5
+      grid-column: 1 / 6
     // Contact form block
     &__contact-form
       grid-row: 4
@@ -378,7 +381,7 @@
   // Newsletter
   .newsletter
     padding: 76px 0 83px 0
-    height: 319px
+    // height: 319px
     &__wrapper
       max-width: 576px
       width: 90%
@@ -424,6 +427,8 @@
     width: 100%
   // Footer
   .footer
+    &__contact-form
+      grid-column: 1 / 6
     // Contact form inputs
     &__input-wrapper
       flex-wrap: wrap
@@ -529,6 +534,10 @@
     &__contact-details
       grid-row: 6
       grid-column: 1
+    &__title--mb-24
+      margin-top: 10px
+    &__title--mt-30
+      margin-top: 30px
     // Contact form block
     &__contact-form
       grid-row: 7
@@ -583,9 +592,19 @@
     width: 100%
   // Reviews
   .reviews
+    padding-bottom: 50px
     &__title
       margin: auto
       margin-bottom: 42px
       max-width: 219px
       font-size: 18px
       line-height: 23px
+  .reviews-slider
+    &__text-review
+      text-align: left
+    &__button--prev
+      margin-left: -90px
+    &__button--next
+      margin-right: -90px
+  .activities
+    padding: 40px 0 60px 0
