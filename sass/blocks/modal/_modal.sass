@@ -18,13 +18,17 @@
   // Window
   &__dialog
     position: fixed
-    padding: 33px 88px
+    padding-top: 33px
+    padding-left: 88px
+    padding-right: 88px
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     width: 478px
     max-width: 100%
+    max-height: 90%
     border-radius: 8px
+    overflow-y: auto
     z-index: 101
     background-color: $dark
     color: $light
@@ -85,6 +89,7 @@
     background-color: $light
   // Modal form send button
   &__button
+    margin-bottom: 33px
     padding: 18px
     min-width: 160px
     min-height: 50px
@@ -98,6 +103,7 @@
     background-color: $primary-color
   // Modal form info
   &__info
+    margin-bottom: 33px
     font-weight: bold
     font-size: 12px
     line-height: 15px
