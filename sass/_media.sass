@@ -19,11 +19,11 @@
       grid-template-columns: 166px 20px 6fr 20px 9fr 20px 7fr
 
 @media (min-width: 992px)
-  a:hover
+  a:hover, a:focus
     color: $primary-color
   button:hover, button:focus
-    font-size: 15px
-    color: #0A223D
+    color: $light
+    background-color: #8f1c2a
 
 @media ( max-width: 992px )
   .container,
@@ -71,7 +71,7 @@
       max-width: 580px
   // Activity block
   .activities
-    padding: 30px 0 50px
+    padding: 60px 0 50px
     &__wrapper
       flex-wrap: wrap
   // Activity card
@@ -119,7 +119,7 @@
     // Policy block
     &__policy
       margin-top: 56px
-      grid-template-columns: repeat(2, 1fr)
+      grid-template-columns: 70% 30%
     // Policy links
     &__policy-links
       grid-column: 1 / 2
@@ -155,6 +155,116 @@
       margin-bottom: 15px
 
 @media ( max-width: 768px )
+  .container,
+  .newsletter__wrapper
+    max-width: 700px
+    width: 92%
+  // Top of the navigation bar
+  .navbar-top
+    padding: 30px 0
+    &__search
+      margin-left: auto
+    &__search-input
+      width: 340px
+  // Logo in the navigation bar
+  .logo
+    max-width: 132px
+  // Bootom of the navigation bar
+  .navbar-menu
+    padding: 22px 0
+    &__link
+      font-size: 12px
+      line-height: 15px
+  .hotel-grid
+    flex-direction: column
+  // Hotel slider
+  .hotel-slider
+    width: 100%
+    margin-bottom: 30px
+  // Hotel booking
+  .hotel-booking
+    flex-direction: row
+  // Hotel booking
+  .booking
+    width: 49%
+  // Geo map
+  #map
+    width: 49%
+    height: 210px
+  // Reviews
+  .reviews
+    &__title
+      font-size: 30px
+  // Reviews slider
+  .reviews-slider
+    &__item
+      max-width: 580px
+  // Activity block
+  .activities
+    padding: 60px 0 50px
+    &__wrapper
+      flex-wrap: wrap
+  // Activity card
+  .card
+    margin-bottom: 20px
+    width: 49%
+    height: 255px
+  // Footer
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    // Footer wrapper
+    &__wrapper
+      grid-template-columns: 3fr 18px 5fr 18px 4fr
+      grid-row-gap: 60px
+      grid-column-gap: 10px
+    // Footer Logo
+    &__logo-link
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 2
+    // Social network block
+    &__social-network
+      grid-row: 1 / 2
+      grid-column: span 4
+      align-self: center
+    // All categories block
+    &__categories
+      grid-row: 2 / 3
+      grid-column: 1 / 2
+    // Additional information block
+    &__information
+      grid-column: 3 / 4
+    // Legal information block
+    &__legal
+      grid-column: 5/ 6
+    // Contact details block
+    &__contact-details
+      grid-row: 3
+      grid-column: 1 / 5
+    // Contact form block
+    &__contact-form
+      grid-row: 4
+      grid-column: 1 / 5
+    // Policy block
+    &__policy
+      margin-top: 56px
+      grid-template-columns: 70% 30%
+    // Policy links
+    &__policy-links
+      grid-column: 1 / 2
+      justify-content: flex-start
+    // Payment systems images
+    &__policy-image
+      grid-column: 2 / 3
+  // Modal window
+  .modal
+    // Window
+    &__dialog
+      padding-left: 58px
+      padding-right: 58px
+
+@media ( max-width: 700px )
   body
     padding-top: 80px
   body.no-scroll
@@ -223,7 +333,7 @@
       display: block
   .navbar-menu--visible
     display: block
-    height: 100%
+    overflow-y: auto
   // Hotel block
   .hotel
     padding-top: 0
@@ -273,7 +383,7 @@
       margin-bottom: 37px
   // Reviews
   .reviews
-    padding-bottom: 30px
+    padding-bottom: 60px
     &__title
       margin-bottom: 50px
       font-size: 30px
@@ -296,7 +406,7 @@
       transform: translateX(50%)
   // Activity block
   .activities
-    padding: 20px 0 30px 0
+    padding: 60px 0 30px 0
     &__title
       margin-bottom: 36px
       font-size: 24px
@@ -361,12 +471,13 @@
     height: 180px
   // Reviews
   .reviews
-    padding-bottom: 20px
+    padding-bottom: 50px
     &__title
       margin-bottom: 42px
       font-size: 18px
   // Activity block
   .activities
+    padding: 60px 0 60px 0
     &__title
       font-size: 18px
   // Activity card
@@ -439,6 +550,14 @@
       padding: 33px 40px
 
 @media ( min-width: 320px ) and ( max-width: 480px )
+  .text
+    &__hotel-description
+      max-width: 280px
+  .hotel-wrapper
+    &__stars
+      margin-right: 22px
+  .breadcrumb
+    &__list
   // Top of the navigation bar
   .navbar-top
     &__search--mobile-visible
@@ -460,5 +579,8 @@
   // Reviews
   .reviews
     &__title
+      margin: auto
+      margin-bottom: 42px
+      max-width: 219px
       font-size: 18px
       line-height: 23px

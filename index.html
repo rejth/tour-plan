@@ -25,7 +25,7 @@
       <!-- Top of the navigation bar -->
       <div class="navbar-top">
         <!-- Logo -->
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="sass/blocks/navbar/img/logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
 
@@ -501,28 +501,28 @@
       <!-- Actitvities wrapper -->
       <div class="activities__wrapper">
         <!-- Activities item -->
-        <div class="card" data-aos="fade-right" data-aos-delay="100">
+        <div class="card" data-aos="fade-right" data-aos-delay="50">
           <img src="sass/blocks/activities/img/card1.jpg" alt="Image: card image" class="card__image" />
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
         </div>
         <!-- /.activities__item -->
         <!-- Activities item -->
-        <div class="card" data-aos="fade-right" data-aos-delay="200">
+        <div class="card" data-aos="fade-right" data-aos-delay="100">
           <img src="sass/blocks/activities/img/card2.jpg" alt="Image: card image" class="card__image" />
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
         </div>
         <!-- /.activities__item -->
         <!-- Activities item -->
-        <div class="card" data-aos="fade-right" data-aos-delay="300">
+        <div class="card" data-aos="fade-right" data-aos-delay="200">
           <img src="sass/blocks/activities/img/card3.jpg" alt="Image: card image" class="card__image" />
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
         </div>
         <!-- /.activities__item -->
         <!-- Activities item -->
-        <div class="card" data-aos="fade-right" data-aos-delay="400">
+        <div class="card" data-aos="fade-right" data-aos-delay="300">
           <img src="sass/blocks/activities/img/card4.jpg" alt="Image: card image" class="card__image" />
           <h3 class="card__title card__title--width-200">The blue marine discovery quest</h3>
           <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
@@ -702,7 +702,8 @@
               </div>
               <!-- /.footer__input-group -->
               <div class="footer__input-group">
-                <input type="tel" class="footer__input" placeholder="Phone Number*" name="phone" />
+                <input type="tel" class="footer__input" placeholder="Phone Number*" name="phone"
+                  data-mask="+7 (000) 000-00-00" />
               </div>
               <!-- /.footer__input-group -->
             </div>
@@ -751,7 +752,8 @@
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="form modal__form">
           <input type="text" class="modal__input" placeholder="Your Full Name*" name="name" />
-          <input type="tel" class="modal__input" placeholder="Phone Number*" name="phone" />
+          <input type="tel" class="modal__input" placeholder="Phone Number*" name="phone"
+            data-mask="+7 (000) 000-00-00" />
           <input type="email" class="modal__input" placeholder="Email*" name="email" />
           <textarea class="modal__message" placeholder="Message" name="message"></textarea>
           <button class="modal__button">Send</button>
@@ -767,6 +769,7 @@
   <script src="js/yandex-map-api/icon_customImage.js"></script>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/parallax/parallax.min.js"></script>
   <script src="js/aos.js"></script>
