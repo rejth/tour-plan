@@ -181,6 +181,8 @@
     &__link
       font-size: 12px
       line-height: 15px
+  .hotel
+    padding-bottom: 60px
   .hotel-grid
     flex-direction: column
   // Hotel slider
@@ -564,15 +566,26 @@
       padding: 33px 40px
 
 @media ( min-width: 320px ) and ( max-width: 480px )
+  .hotel
+    padding-bottom: 20px
   .text
     &__hotel-description
+      margin-bottom: 18px
       max-width: 280px
   .hotel-wrapper
     &__stars
       margin-right: 25px
   .breadcrumb
+    &__list
+      padding-top: 12px
     &__list-item
       font-size: 10px
+  .hotel-slider
+    margin-bottom: 20px
+  .booking + #map
+    margin-bottom: 20px
+  // #map
+  //   margin-top: 0
   // Top of the navigation bar
   .navbar-top
     &__search--mobile-visible
@@ -609,3 +622,16 @@
       margin-right: -90px
   .activities
     padding: 40px 0 60px 0
+  .footer
+    &__input
+      margin-top: 0
+      margin-bottom: 15px
+    &__message
+      margin-top: 0
+      margin-bottom: 15px
+    &__button
+      order: 4
+    &__info
+      margin-bottom: 15px
+      order: 3
+      flex-basis: 100%
