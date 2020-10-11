@@ -13,6 +13,21 @@
   .card
     width: 230px
     height: 230px
+  // Footer
+  .footer
+    &__wrapper
+      grid-template-columns: 166px 119px 3.3fr 129px 5.3fr 94px 4fr
+      row-gap: 10px
+
+@media (min-width: 992px)
+  a:hover, a:focus
+    color: $primary-color
+  button:hover, button:focus
+    color: $light
+    background-color: #8f1c2a
+  .footer
+    &__link-image:hover
+      box-shadow: 0px 0px 15px 10px #000
 
 @media ( max-width: 992px )
   .container,
@@ -50,13 +65,17 @@
   #map
     width: 335px
     height: 210px
+  // Reviews
+  .reviews
+    &__title
+      font-size: 30px
   // Reviews slider
   .reviews-slider
     &__item
       max-width: 580px
   // Activity block
   .activities
-    padding: 30px 0 50px
+    padding: 60px 0 50px
     &__wrapper
       flex-wrap: wrap
   // Activity card
@@ -64,15 +83,215 @@
     margin-bottom: 20px
     width: 338px
     height: 255px
+  // Footer
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    // Footer wrapper
+    &__wrapper
+      grid-template-columns: 3fr 18px 5fr 18px 4fr
+      grid-row-gap: 60px
+      grid-column-gap: 10px
+    // Footer Logo
+    &__logo-link
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 2
+    // Social network block
+    &__social-network
+      grid-row: 1 / 2
+      grid-column: span 4
+      align-self: center
+    // All categories block
+    &__categories
+      grid-row: 2 / 3
+      grid-column: 1 / 2
+    // Additional information block
+    &__information
+      grid-column: 3 / 4
+    // Legal information block
+    &__legal
+      grid-column: 5/ 6
+    // Contact details block
+    &__contact-details
+      grid-row: 3
+      grid-column: 1 / 5
+    &__title--mb-24
+      margin-top: 0
+    // Contact form block
+    &__contact-form
+      grid-row: 4
+      grid-column: 1 / 5
+    // Policy block
+    &__policy
+      margin-top: 56px
+      grid-template-columns: 70% 30%
+    // Policy links
+    &__policy-links
+      grid-column: 1 / 2
+      justify-content: flex-start
+    // Payment systems images
+    &__policy-image
+      grid-column: 2 / 3
+  // Modal window
+  .modal
+    // Window
+    &__dialog
+      padding-left: 58px
+      padding-right: 58px
+
+@media ( max-width: 768px ) and ( orientation: landscape )
+  .modal
+    &__dialog
+      height: 550px
+      max-height: 100%
+    &__dialog-guts
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      padding: 33px 40px
+      overflow: auto
+    &__button
+      margin-top: 0
+    &__info
+      margin-bottom: 15px
 
 @media ( max-width: 768px )
+  .container,
+  .newsletter__wrapper
+    max-width: 700px
+    width: 92%
+  // Top of the navigation bar
+  .navbar-top
+    padding: 30px 0
+    &__search
+      margin-left: auto
+    &__search-input
+      width: 340px
+  // Logo in the navigation bar
+  .logo
+    max-width: 132px
+  // Bootom of the navigation bar
+  .navbar-menu
+    padding: 22px 0
+    &__link
+      font-size: 12px
+      line-height: 15px
+  .hotel
+    padding-bottom: 60px
+  .hotel-grid
+    flex-direction: column
+  // Hotel slider
+  .hotel-slider
+    width: 100%
+    margin-bottom: 30px
+  // Hotel booking
+  .hotel-booking
+    flex-direction: row
+  // Hotel booking
+  .booking
+    width: 49%
+  // Geo map
+  #map
+    width: 49%
+    height: 210px
+  .newsletter
+    padding: 92px 0 93px 0
+  // Reviews
+  .reviews
+    &__title
+      font-size: 30px
+  // Reviews slider
+  .reviews-slider
+    &__item
+      max-width: 580px
+  // Activity block
+  .activities
+    padding: 60px 0 50px
+    &__wrapper
+      flex-wrap: wrap
+  // Activity card
+  .card
+    margin-bottom: 20px
+    width: 49%
+    height: 255px
+  // Footer
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    // Footer wrapper
+    &__wrapper
+      grid-template-columns: 3fr 18px 5fr 18px 4fr
+      grid-row-gap: 60px
+      grid-column-gap: 10px
+    // Footer Logo
+    &__logo-link
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 2
+    // Social network block
+    &__social-network
+      grid-row: 1 / 2
+      grid-column: span 4
+      align-self: center
+    // All categories block
+    &__categories
+      grid-row: 2 / 3
+      grid-column: 1 / 2
+    // Additional information block
+    &__information
+      grid-column: 3 / 4
+    // Legal information block
+    &__legal
+      grid-column: 5/ 6
+    // Contact details block
+    &__contact-details
+      grid-row: 3
+      grid-column: 1 / 6
+    // Contact form block
+    &__contact-form
+      grid-row: 4
+      grid-column: 1 / 5
+    // Policy block
+    &__policy
+      margin-top: 56px
+      grid-template-columns: 70% 30%
+    // Policy links
+    &__policy-links
+      grid-column: 1 / 2
+      justify-content: flex-start
+    // Payment systems images
+    &__policy-image
+      grid-column: 2 / 3
+  // Modal window
+  .modal
+    // Window
+    &__dialog
+      padding-left: 58px
+      padding-right: 58px
+
+@media ( max-width: 700px )
+  body
+    padding-top: 80px
+  body.no-scroll
+    overflow-y: hidden
   .container
     max-width: 576px
     width: 90%
+  .navbar--mobile-fixed
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 100
   // Top of the navigation bar
   .navbar-top
     padding: 28px 0
-    &__search, &__user
+    &__search--mobile-hidden, &__user--mobile-hidden
       display: none
     &__menu-button
       display: flex
@@ -89,9 +308,42 @@
       width: 16px
       height: 1px
       background-color: $text-color
+    &__user
+      flex-direction: column
   // Bootom of the navigation bar
   .navbar-menu
+    position: fixed
     display: none
+    padding: 31px 38px 68px 38px
+    left: 0
+    right: 0
+    bottom: 0
+    top: 80px
+    &__list
+      flex-direction: column
+    &__item
+      margin-bottom: 20px
+    &__item--mobile-visible
+      display: block
+    &__search--mobile-visible, &__user--mobile-visible
+      display: flex
+    &__search--mobile-visible
+      margin-left: 0
+      margin-bottom: 19px
+    &__user
+      flex-direction: column
+    &__user-name--light
+      margin-top: 20px
+      margin-bottom: 7px
+      margin-left: 0
+      color: $light
+    &__user-avatar--mr-0
+      margin-right: 0
+    &__item--mobile-visible
+      display: block
+  .navbar-menu--visible
+    display: block
+    overflow-y: auto
   // Hotel block
   .hotel
     padding-top: 0
@@ -131,7 +383,7 @@
   // Newsletter
   .newsletter
     padding: 76px 0 83px 0
-    height: 319px
+    // height: 319px
     &__wrapper
       max-width: 576px
       width: 90%
@@ -141,7 +393,7 @@
       margin-bottom: 37px
   // Reviews
   .reviews
-    padding-bottom: 30px
+    padding-bottom: 60px
     &__title
       margin-bottom: 50px
       font-size: 30px
@@ -164,7 +416,7 @@
       transform: translateX(50%)
   // Activity block
   .activities
-    padding: 20px 0 30px 0
+    padding: 60px 0 30px 0
     &__title
       margin-bottom: 36px
       font-size: 24px
@@ -175,6 +427,53 @@
   .card
     margin-bottom: 20px
     width: 100%
+  // Footer
+  .footer
+    &__contact-form
+      grid-column: 1 / 6
+    // Contact form inputs
+    &__input-wrapper
+      flex-wrap: wrap
+    &__input-group
+      margin-top: 0
+      flex-basis: 100%
+    &__input-group + &__input-group
+      margin-left: 0
+    &__input
+      margin-top: 15px
+      margin-bottom: 0
+    &__message
+      margin-top: 15
+    // Modal window
+  .modal
+    // Window
+    &__button
+      margin-top: 15px
+      width: 100%
+      order: 100
+    &__info
+      margin-bottom: 0
+
+@media ( max-width: 576px ) and ( orientation: landscape )
+  .modal
+    &__dialog
+      height: 487px
+      max-height: 100%
+    &__dialog-guts
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      padding: 33px 40px
+      overflow: auto
+    &__button
+      margin-top: 0
+      margin-bottom: 33px
+    &__info
+      margin-bottom: 15px
 
 @media ( max-width: 576px )
   .logo
@@ -184,19 +483,117 @@
     height: 180px
   // Reviews
   .reviews
-    padding-bottom: 20px
+    padding-bottom: 50px
     &__title
       margin-bottom: 42px
       font-size: 18px
   // Activity block
   .activities
+    padding: 60px 0 60px 0
     &__title
       font-size: 18px
   // Activity card
   .card
     margin-bottom: 28px
+  // Footer
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    // Footer wrapper
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    // Footer Logo
+    &__logo-link
+      grid-row: 1
+      grid-column: 1
+    // Social network block
+    &__social-network
+      flex-direction: column
+      grid-row: 2
+      grid-column: 1
+    // Social network title
+    &__title--inline
+      margin-right: 0
+      margin-bottom: 22px
+    // Social network links
+    &__social-links
+      flex-direction: row
+      max-width: 83px
+    // Legal information block
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    // Additional information block
+    &__information
+      grid-row: 4
+      grid-column: 1
+    // All categories block
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    // Contact details block
+    &__contact-details
+      grid-row: 6
+      grid-column: 1
+    &__title--mb-24
+      margin-top: 10px
+    &__title--mt-30
+      margin-top: 30px
+    // Contact form block
+    &__contact-form
+      grid-row: 7
+      grid-column: 1
+    // Policy block
+    &__policy
+      margin-top: 30px
+      grid-template-columns: 1fr
+    // Policy links
+    &__policy-links
+      grid-row: 1
+      grid-column: 1
+      justify-content: flex-start
+    // Payment systems images
+    &__policy-image
+      margin-top: 10px
+      grid-row: 2
+      grid-column: 1
+      text-align: left
+  // Modal window
+  .modal
+    // Window
+    &__dialog
+      padding: 33px 40px
 
 @media ( min-width: 320px ) and ( max-width: 480px )
+  .hotel
+    padding-bottom: 20px
+  .text
+    &__hotel-description
+      margin-bottom: 18px
+      max-width: 280px
+  .hotel-wrapper
+    &__stars
+      margin-right: 25px
+  .breadcrumb
+    &__list
+      padding-top: 12px
+    &__list-item
+      font-size: 10px
+  .hotel-slider
+    margin-bottom: 20px
+  .booking + #map
+    margin-bottom: 20px
+  // #map
+  //   margin-top: 0
+  // Top of the navigation bar
+  .navbar-top
+    &__search--mobile-visible
+      width: 100%
+  // Bootom of the navigation bar
+  .navbar-menu
+    &__item--mobile-width-100
+      width: 100%
   // Newsletter
   .newsletter
     &__title
@@ -205,10 +602,36 @@
     &__strong
       font-size: 30px
       line-height: 38px
-    &__subscribe
-      width: 100%
+  .subscribe
+    width: 100%
   // Reviews
   .reviews
+    padding-bottom: 50px
     &__title
+      margin: auto
+      margin-bottom: 42px
+      max-width: 219px
       font-size: 18px
       line-height: 23px
+  .reviews-slider
+    &__text-review
+      text-align: left
+    &__button--prev
+      margin-left: -90px
+    &__button--next
+      margin-right: -90px
+  .activities
+    padding: 40px 0 60px 0
+  .footer
+    &__input
+      margin-top: 0
+      margin-bottom: 15px
+    &__message
+      margin-top: 0
+      margin-bottom: 15px
+    &__button
+      order: 4
+    &__info
+      margin-bottom: 15px
+      order: 3
+      flex-basis: 100%

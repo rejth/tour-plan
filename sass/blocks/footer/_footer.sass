@@ -1,0 +1,179 @@
+// Footer block
+.footer
+  background-color: $dark
+  color: $light
+  padding-top: 103px
+  padding-bottom: 51px
+  // Footer wrapper
+  &__wrapper
+    display: grid
+    grid-template-columns: 166px 119px 3.3fr 129px 5.3fr 94px 4fr
+    grid-gap: 0
+    grid-auto-rows: minmax(60px, max-content)
+    align-items: start
+  // All titles
+  &__title
+    margin: 0
+    margin-bottom: 15px
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    color: $light
+  // All lists
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+  // All list items
+  &__item
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text-color
+  // All list links
+  &__link
+    text-decoration: none
+    color: inherit
+  // Footer Logo
+  &__logo-link
+    display: flex
+    width: 166px
+    grid-row: 1 / 3
+    grid-column: 1 / 2
+    align-self: stretch
+  &__logo
+    display: flex
+    align-items: flex-end
+    width: 100%
+  // All categories block
+  &__categories
+    grid-row: 1 / 4
+    grid-column: 3 / 4
+  // Additional information block
+  &__information
+    grid-column: 5 / 6
+  // Social network block
+  &__social-network
+    display: flex
+    grid-row: 2 / 3
+    grid-column: 5 / 8
+    align-self: center
+  // Social network title
+  &__title--inline
+    margin: 0 43px 0 0
+  // Social network links
+  &__social-links
+    display: flex
+    align-items: center
+    min-width: 83px
+    justify-content: space-between
+  // Legal information block
+  &__legal
+    grid-column: 7 / 8
+  // Contact details block
+  &__contact-details
+    grid-column: 1 / 5
+    padding-right: 20px
+  // Contact details title
+  &__title--mb-24
+    margin-top: 20px
+    margin-bottom: 24px
+  // Contact details description
+  &__text
+    margin: 0
+  // Contact details icon wrapper
+  &__icon-wrapper
+    min-width: 40px
+  // Contact details list items
+  &__item--mt-2
+    display: flex
+    align-items: flex-start
+    margin-top: 20px
+  // Contact form block
+  &__contact-form
+    grid-column: 5 / 8
+  // Contact form
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  // Contact form inputs
+  &__input-wrapper
+    display: flex
+    flex-basis: 100%
+  &__input-group
+    flex-basis: 50%
+  &__input-group + &__input-group
+    margin-left: 30px
+  &__input
+    margin-top: 19px
+    padding: 0 23px
+    justify-content: space-between
+    width: 100%
+    height: 50px
+    font-size: 12px
+    line-height: 15px
+    border: none
+    border-radius: 4px
+    color: $text-color
+    background-color: $light
+  // Contact message form
+  &__message
+    margin-top: 15px
+    margin-bottom: 22px
+    padding: 18px 23px
+    height: 123px
+    flex-basis: 100%
+    font-size: 12px
+    line-height: 15px
+    border: none
+    border-radius: 4px
+    resize: none
+    color: $text-color
+    background-color: $light
+  // Contact form button
+  &__button
+    padding: 18px
+    min-width: 160px
+    min-height: 50px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    color: $light
+    background-color: $primary-color
+  // Contact form info
+  &__info
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $required-field-color
+  // Policy block
+  &__policy
+    margin-top: 95px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+  // Policy links
+  &__policy-links
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    grid-column: 2 / 3
+    grid-auto-rows: minmax(40px, auto)
+  // Policy link
+  &__policy-link
+    font-size: 12px
+    line-height: 15px
+    text-decoration: none
+    color: $light
+    &:nth-child(even)
+      margin-left: 11px
+      margin-right: 11px
+  // Payment systems images
+  &__policy-image
+    min-width: 136px
+    text-align: right
