@@ -1,0 +1,28 @@
+{
+  "name": "gulp-start",
+  "version": "1.0.0",
+  "description": "My Gulp start project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilia Kirsanov",
+  "license": "ISC",
+  "devDependencies": {
+    "@cedx/gulp-php-minify": "^11.0.0",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "vinyl-ftp": "^0.6.1"
+  }
+}
