@@ -3,7 +3,7 @@
 https://ilyakirsanov.ru/tour-plan/
 
 **Tour Plan**  
-Учебный проект для практики
+Учебный проект для практики верстки
 
 **Технологии:** 
 1) HTML/CSS/JavaScript, Flexbox Layout, CSS Grid Layout, JQuery 
